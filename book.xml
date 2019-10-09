@@ -2,39 +2,39 @@
 <favbooks>
 
 	<book>
-		<title>The Design of Dissent, Expanded Edition: Greed, Nationalism, Alternative Facts, and the Resistance</title>
-		<author>Milton Glaser, Mirko Ilic, Steven Heller, Tony Kushner</author>
-		<ISBN-13>978-1631594243</ISBN-13>
-		<pages>296</pages>
-		<binding>Flexibound</binding>
-		<amazonURL>http://a.co/0KWAXs7</amazonURL>
+		<title>Harry Potter and the Order of the Phoenix</title>
+		<author>J. K. Rowling</author>
+		<publisher>Scholastic</publisher>
+		<pages>870</pages>
+		<price>12.99</price>
+		<website>https://kids.scholastic.com/kids/books/harry-potter/</website>
 	</book>
 
 	<book>
-		<title>Mira calligraphiae monumenta: A Sixteenth-century Calligraphic Manuscript inscribed by Georg Bocskay and Illuminated by Joris Hoefnagel</title>
-		<author>Lee Hendrix, Thea Vignau-Wilberg</author>
-		<ISBN-13>978-0892362127</ISBN-13>
-		<pages>424</pages>
-		<binding>Hardcover</binding>
-		<amazonURL>http://a.co/dSN7nG6</amazonURL>
+		<title>The Last Olympian</title>
+		<author>Rick Riordan, Percy Jackson</author>
+		<publisher>978-0892362127</publisher>
+		<pages>377</pages>
+		<price>19.99</price>
+		<website>https://www.readriordan.com/book/the-last-olympian-the-graphic-novel/</website>
 	</book>
 	
 	<book>
-		<title>Breaking the Maya Code</title>
-		<author>Michael D. Coe</author>
-		<ISBN-13>978-0500289556</ISBN-13>
-		<pages>304</pages>
-		<binding>Paperback</binding>
-		<amazonURL>http://a.co/esWdAA8</amazonURL>
+		<title>Hour of the Bees</title>
+		<author>Lindsay Eagar, Kristina Closs</author>
+		<publisher>Candlewick Press</publisher>
+		<pages>360</pages>
+		<price>8.99</price>
+		<website>https://www.goodreads.com/book/show/22453777-hour-of-the-bees</website>
 	</book>
 
 	<book>
-		<title>Reading the Maya Glyphs</title>
-		<author>Michael D. Coe, Mark Van Stone</author>
-		<ISBN-13>978-0500285534</ISBN-13>
-		<pages>176</pages>
-		<binding>Paperback</binding>
-		<amazonURL>http://a.co/0O6t7t9</amazonURL>
+		<title>Timmy Failure</title>
+		<author>Stephan Pastis</author>
+		<publisher>Candlewick Press</publisher>
+		<pages>330</pages>
+		<price>14.99</price>
+		<website>https://www.goodreads.com/book/show/37976815-it-s-the-end-when-i-say-it-s-the-end</website>
 	</book>
 	
 </favbooks>
