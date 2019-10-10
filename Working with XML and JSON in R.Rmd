@@ -1,0 +1,124 @@
+---
+title: "Working with XML and JSON in R"
+date: "`r Sys.Date()`"
+output:
+  rmdformats::html_docco:
+    highlight: kate
+---
+
+
+```{r knitr_init, echo=FALSE, cache=FALSE}
+library(knitr)
+library(rmdformats)
+
+## Global options
+options(max.print="75")
+opts_chunk$set(echo=FALSE,
+               cache=TRUE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+opts_knit$set(width=75)
+```
+
+# Introduction
+
+In this assignment, we are tasked to create one (1) HTML file, one (1) XML file and one (1) JSON file that holds information on our favorite book on one favorite subject. At least one of the book information must hold more than one author and for each book, title , author and two or three attributes should be included. Once these three files are created, we are asked to load them in R and see if these three data frames are identical. 
+
+# Load Libraries
+
+```{r, echo=TRUE}
+
+library('XML')
+library('RCurl')
+library('jsonlite')
+
+
+```
+
+# Create each file
+
+Each file is created separately and can be found in below githun repo
+
+HTML File : https://raw.githubusercontent.com/anilak1978/working-with-xml-json/master/book.html
+
+XML File: https://raw.githubusercontent.com/anilak1978/working-with-xml-json/master/book.xml
+
+JSON File: https://raw.githubusercontent.com/anilak1978/working-with-xml-json/master/book.json
+
+# Read HTML File and understand file structure
+
+```{r, echo=TRUE}
+# create the url
+book_html_url <- "https://raw.githubusercontent.com/anilak1978/working-with-xml-json/master/book.html"
+
+#collect the source of the html page
+html <- getURLContent(book_html_url)
+
+#parse html table
+book_html <- readHTMLTable(html)
+book_html <- book_html[[1]]
+book_html
+
+```
+
+```{r, echo=TRUE}
+# Look at the structure
+str(book_html)
+
+```
+
+
+
+# Read XML File and understand file structure
+
+
+```{r, echo=TRUE}
+# create the url
+book_xml_url <- "https://raw.githubusercontent.com/anilak1978/working-with-xml-json/master/book.xml"
+
+# collect the source of the xml 
+book_xml <- getURLContent(book_xml_url)
+
+# parse the xml and create the dataframe 
+book_xml <- xmlParse(book_xml)
+book_xml <- xmlToDataFrame(book_xml)
+book_xml
+
+```
+
+```{r, echo=TRUE}
+# look at the structure
+str(book_xml)
+
+```
+
+# Read JSON File and Understand its structure
+
+```{r, echo=TRUE}
+
+# create the url
+book_json_url <- "https://raw.githubusercontent.com/anilak1978/working-with-xml-json/master/book.json"
+
+# collect the json source and create the table
+book_json <- fromJSON(book_json_url)
+book_json <- book_json[[1]]
+book_json
+
+
+```
+
+```{r, echo=TRUE}
+#Look at structure
+str(book_json)
+
+
+```
+
+# Conclusion 
+
+Upon load of the html, xml and json content and files in R, we see that the xml and htlm are more similar compare to the json file. Both xml and html tables sees all the variables as factor data type but json table sees some variables as character and some integer. From a structure perspective html and xml files that we loaded in R are almost identical however json is different in terms of data types. 
+
+
