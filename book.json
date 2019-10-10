@@ -1,7 +1,7 @@
 {"favbooks" :[
 	{
 	"title" : "Harry Potter and the Order of the Phoenix",
-	"author" : ["J. K. Rowling"],
+	"author" : "J. K. Rowling",
 	"publisher" : "Scholastic",
 	"pages" : 870,
 	"price" : 12.99,
@@ -9,7 +9,7 @@
 	},
 	{
 	"title" : "The Last Olympian",
-	"author" : ["Rick Riordan, Percy Jackson"],
+	"author" : "Rick Riordan, Percy Jackson",
 	"publisher" : "Disney",
 	"pages" : 377,
 	"price" : 19.99,
@@ -17,7 +17,7 @@
 	},
 	{
 	"title" : "Hour of the Bees",
-	"author" : ["Lindsay Eagar, Kristina Closs"],
+	"author" : "Lindsay Eagar, Kristina Closs",
 	"publisher" : "Candlewick Press",
 	"pages" : 360,
 	"price" : 8.99,
@@ -25,7 +25,7 @@
 	},
 	{
 	"title" : "Timmy Failure",
-	"author" : ["Stephan Pastis"],
+	"author" : "Stephan Pastis",
 	"publisher" : "Candlewick Press",
 	"pages" : 330,
 	"price" : 14.99,
